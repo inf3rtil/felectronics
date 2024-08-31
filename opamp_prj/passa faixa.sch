@@ -1,6 +1,6 @@
 <Qucs Schematic 24.3.0>
 <Properties>
-  <View=-500,-113,1377,948,0.826446,0,0>
+  <View=-390,-78,1439,672,1.19809,0,0>
   <Grid=10,10,1>
   <DataSet=passa faixa.dat>
   <DataDisplay=passa faixa.dpl>
@@ -32,7 +32,8 @@
   <R R6 1 1130 570 -26 15 0 0 "4.7 kOhm" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
   <Vac V1 1 100 490 18 -26 0 1 "1 V" 1 "1 kHz" 0 "0" 0 "0" 0 "0" 0 "0" 0>
   <GND * 1 100 550 0 0 0 0>
-  <.TR TR1 1 200 610 0 71 0 0 "lin" 1 "0" 1 "10 ms" 1 "200" 0 "Trapezoidal" 0 "2" 0 "1 ns" 0 "1e-16" 0 "150" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "26.85" 0 "1e-3" 0 "1e-6" 0 "1" 0 "CroutLU" 0 "no" 0 "yes" 0 "0" 0>
+  <NutmegEq NutmegEq1 1 -110 210 -29 18 0 0 "ALL" 1 "dB=dB(saida)" 1>
+  <.AC AC1 1 -150 380 0 42 0 0 "lin" 1 "1 kHz" 1 "100 kHz" 1 "2000" 1 "no" 0>
 </Components>
 <Wires>
   <350 510 350 530 "" 0 0 0 "">
@@ -68,9 +69,10 @@
   <100 400 230 400 "Entrada" 170 370 36 "">
 </Wires>
 <Diagrams>
-  <Rect 170 308 731 328 3 #c0c0c0 1 00 1 0 0.2 1 1 -0.1 0.5 1.1 1 -0.1 0.5 1.1 315 0 225 1 0 0 "" "" "">
-	<"ngspice/tran.v(entrada)" #0000ff 0 3 0 0 0>
-	<"ngspice/tran.v(saida)" #ff0000 0 3 0 0 0>
+  <Rect 140 320 430 340 3 #c0c0c0 1 10 1 0 1 0 1 -1 0.5 1 1 -1 0.5 1 315 0 225 1 0 0 "" "" "">
+	<"ngspice/ac.db" #ff0000 0 3 0 0 0>
+	  <Mkr 16996.5 302 -362 3 0 0>
+	  <Mkr 5506.75 14 -364 3 0 0>
   </Rect>
 </Diagrams>
 <Paintings>
